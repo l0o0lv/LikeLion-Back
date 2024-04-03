@@ -35,7 +35,6 @@ public class SignController {
     public ResponseEntity<UserDto> PatchUser(@PathVariable("id") Long id,
                                              @RequestBody UserDto userDto){
         UserDto patchUser = signService.PatchUser(id,userDto);
-
         return ResponseEntity.status(HttpStatus.OK).body(patchUser); // HTTP 200 반환
     }
 
