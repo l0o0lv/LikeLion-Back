@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/likelion") // 모든 핸들러 메서드의 기본 URL 경로 설정
 public class SignController {
     private final SignService signService;
-
+    //커밋 테스트
     public SignController(@Autowired SignService signService){ //의존성 주입
         this.signService = signService;
     }
