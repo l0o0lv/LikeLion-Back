@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/likelion") // 모든 핸들러 메서드의 기본 URL 경로 설정
 public class SignController {
     private final SignService signService;
-    //커밋 테스트
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> 6ce42b5c87a39390f042e74296f0a147cf10697a
     public SignController(@Autowired SignService signService){ //의존성 주입
         this.signService = signService;
     }
@@ -23,7 +27,6 @@ public class SignController {
         UserDto createUser = signService.SignUp(userDto);
         return ResponseEntity.status(HttpStatus.CREATED).body(createUser); // CREATED : 201
     }
-
     // @PathVariable : URL 경로의 일부를 메서드의 매개변수로 바인딩할 때 사용
     @GetMapping("/user/{id}") //회원번호로 회원조회 . READ
     public ResponseEntity<UserDto> ReadAllUser(@PathVariable("id") Long id){
