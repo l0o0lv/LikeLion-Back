@@ -2,6 +2,7 @@ package com.example.likelion.Entity;
 
 import com.example.likelion.Dto.UserDto;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 
