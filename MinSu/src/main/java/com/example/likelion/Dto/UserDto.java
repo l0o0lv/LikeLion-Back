@@ -16,7 +16,7 @@ public class UserDto {
 
     @NotNull(message = "값을 입력해주세요.")
     private String uid; // 아이디
-    @Size(min = 6, max = 10, message = "비밀번호는 6자 이상 10자 미만으로 입력해주세요.")
+    @Size(message = "비밀번호는 6자 이상 10자 미만으로 입력해주세요.", min = 6, max = 10)
     private String password; // 비밀번호
 
     public static UserEntity DtoToEntity(UserDto userDto){
